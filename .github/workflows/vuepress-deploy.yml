@@ -13,10 +13,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Vuepress deploy
-        uses: jenkey2011/vuepress-deploy@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_BRANCH: gh-pages
-          BUILD_SCRIPT: yarn --frozen-lockfile && yarn docs:build #Use yarn.lock to install dependencies
-          BUILD_DIR: docs/.vuepress/dist/
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3.6.4
+        with:
+          # Set a SSH private key from repository secret value for pushing to the remote branch.
+          deploy_key: ${{ secrets.ACCESS_TOKEN }} # optional
+          # Set a generated GITHUB_TOKEN for pushing to the remote branch.
+          #github_token: # optional
+          # Set a personal access token for pushing to the remote branch.
+          #personal_token: # optional
+          # Set a target branch for deployment.
+          publish_branch: gh-pages # optional, default is gh-pages
+          # Set an input directory for deployment.
+          publish_dir: docs/.vuepress/dist/ # optional, default is public
+          # Set an external repository (owner/repo).
+          # external_repository: # optional
+          # If empty commits should be made to the publication branch
+          allow_empty_commit: false # optional, default is false
+          # If existing files in the publish branch should be not removed before deploying
+          keep_files: false # optional, default is false
+          # Keep only the latest commit on a GitHub Pages branch
+          force_orphan: false # optional, default is false
+          # Set custom domain
+          #cname: # optional
