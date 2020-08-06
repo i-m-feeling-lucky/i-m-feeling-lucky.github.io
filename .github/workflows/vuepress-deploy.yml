@@ -37,6 +37,6 @@ jobs:
           # If existing files in the publish branch should be not removed before deploying
           keep_files: false # optional, default is false
           # Keep only the latest commit on a GitHub Pages branch
-          force_orphan: false # optional, default is false
+          force_orphan: true # optional, default is false
           # Set custom domain
           #cname: # optional
