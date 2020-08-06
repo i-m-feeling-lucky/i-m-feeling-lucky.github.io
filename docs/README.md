@@ -7,12 +7,12 @@ actionText: 用户手册 →
 actionLink: /guide/
 features:
 - title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: MIT Licensed | Copyright © 2020-present 派三叔iPython3
+  details: 清爽的界面与符合直觉的操作，帮助您专注于面试与人员管理。
+- title: 身临其境
+  details: 视频通话、白板画图、现场编程与运行，以最直观的方式考察面试者的能力。
+- title: 多平台
+  details: 无论是电脑、平板或是手机，随时随地，有浏览器就能使用。
+footer: MIT Licensed | Copyright © 2020-present i-m-feeling-lucky
 ---
 # Markdown 拓展示例
 

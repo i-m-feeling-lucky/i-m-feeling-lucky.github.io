@@ -1,18 +1,10 @@
-# Simple Guide
-
-Hello there!!
-
-## Topic 1
-
-1
-
-## Topic 2
-
-2
+# 用户手册
 
 <img src="./test.png" height="100px">
 
-![test image](./test.png)
+用户手册记录的是在线面试平台的使用方法，分为三个部分：
 
-
-
+- 管理员
+- HR
+- 面试官
+- 面试流程

@@ -1,6 +1,6 @@
 module.exports = {
-  title: '网站标题',
-  description: '网站描述',
+  title: 'LUCKY Document',
+  description: 'LUCKY 在线面试平台文档',
   theme: '@vuepress/theme-default',
 
   base: '/',// 部署站点的基础路径。默认值为'/'。
@@ -11,48 +11,42 @@ module.exports = {
 
   // 请参考文档来查看所有可用的选项。
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/logo.png',// 在 docs/.vuepress/public 中
+
+    //导航栏
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'Bar', link: '/bar/' },
-      { text: 'bilibili', link: 'https://space.bilibili.com/33902743' },
+      { text: '用户手册', link: '/guide/' },
+      { text: '开发文档', link: '/develop/' },
+      { text: '在线面试平台', link: 'https://interview.yusanshi.com' },
     ],
-    sidebar: 'auto',
-
-    lastUpdated: '本页面最后更新于',
-
-    repo: 'ipython3/vuepress-init',// 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-
-    repoLabel: '查看源码',// 自定义仓库链接文字
-
-    // 以下为可选的编辑链接选项
-
-    // 假如你的文档仓库和项目本身不在一个仓库：
-    docsRepo: 'ipython3/vuepress-init',
-    // 假如文档不是放在仓库的根目录下：
-    docsDir: 'docs',
-    // 假如文档放在一个特定的分支下：
-    docsBranch: 'master',
-    // 默认是 false, 设置为 true 来启用
-    editLinks: true,
-    // 默认为 "Edit this page"
-    editLinkText: '此页面的内容有误？',
+    repo: 'i-m-feeling-lucky',// 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
+    repoLabel: 'Github',// 自定义仓库链接文字
 
     // 侧边栏
     sidebar: {
       '/guide/': [
-        '',     /* /guide/ */
-        'guide1',  /* /guide/guide1.html */
+        '',          //  /guide/
+        'admin',     //  /guide/admin.html
       ],
-
-      '/bar/': [
-        '',      /* /bar/ */
-        'bar1', /* /bar/bar1.html */
+      '/develop/': [
+        '',          // /develop/
+        'frontend',  // /develop/frontend.html
+        'backend',
       ],
-
     },
     sidebarDepth: 2,// 侧边栏深度（最大的深度为 2，能提取到 h2 和 h3 标题）
+
+    editLinks: true,
+    editLinkText: '此页面的内容有误？',
+    // 假如你的文档仓库和项目本身不在一个仓库：
+    docsRepo: 'i-m-feeling-lucky/i-m-feeling-lucky.github.io',
+    // 假如文档放在一个特定的分支下：
+    docsBranch: 'source',
+    // 假如文档不是放在仓库的根目录下：
+    docsDir: 'docs',
+
+    lastUpdated: '最后更新于',
   },
 
   markdown: {
