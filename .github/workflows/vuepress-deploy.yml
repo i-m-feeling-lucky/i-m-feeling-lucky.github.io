@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn --frozen-lockfile #Use yarn.lock to install dependencies
+      - name: Build
+        run: yarn docs:build
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v3.6.4
         with:
@@ -25,7 +29,7 @@ jobs:
           # Set a target branch for deployment.
           publish_branch: gh-pages # optional, default is gh-pages
           # Set an input directory for deployment.
-          publish_dir: docs/.vuepress/dist/ # optional, default is public
+          publish_dir: ./docs/.vuepress/dist # optional, default is public
           # Set an external repository (owner/repo).
           # external_repository: # optional
           # If empty commits should be made to the publication branch
