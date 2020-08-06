@@ -1,6 +1,6 @@
-# i-m-feeling-lucky.github.io
+# LUCKY 在线面试平台文档
 
-LUCKY 在线面试平台文档
+文档链接：[https://i-m-feeling-lucky.github.io/](https://i-m-feeling-lucky.github.io/)
 
 ## 仓库结构
 
