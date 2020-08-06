@@ -1,9 +1,9 @@
 ---
 home: true
 heroImage: /hero.png
-heroText: 这里是大标题
-tagline: 这里是小标题
-actionText: 快速上手 →
+heroText: LUCKY 在线面试平台
+tagline: 千里“职”缘一线牵
+actionText: 用户手册 →
 actionLink: /guide/
 features:
 - title: 简洁至上
