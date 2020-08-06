@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /logo-lucky.jpg
 heroText: LUCKY 在线面试平台
 tagline: 千里“职”缘一线牵
 actionText: 用户手册 →
@@ -82,5 +82,5 @@ export default {
 
 ## 图片
 
-<img src="./clover.jpg" height="100px">
+<img src="./test.png" height="100px">
 

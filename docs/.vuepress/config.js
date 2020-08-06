@@ -9,9 +9,14 @@ module.exports = {
   // 那么 base 应该被设置成 "/bar/"，它的值应当总是以斜杠开始，并以斜杠结束。
   // base 将会作为前缀自动地插入到所有以 / 开始的其他选项的链接中，所以你只需要指定一次。
 
+  // 自定义的 favicon
+  head: [
+    ['link', { rel: 'icon', href: '/logo-lucky.jpg' }]
+  ],
+
   // 请参考文档来查看所有可用的选项。
   themeConfig: {
-    logo: '/logo.png',// 在 docs/.vuepress/public 中
+    logo: '/logo-lucky.jpg',// 在 docs/.vuepress/public 中
 
     //导航栏
     nav: [
@@ -28,11 +33,16 @@ module.exports = {
       '/guide/': [
         '',          //  /guide/
         'admin',     //  /guide/admin.html
+        'HR',
+        'interviewer',
+        'interviewee',
+        'interview',
       ],
       '/develop/': [
         '',          // /develop/
         'frontend',  // /develop/frontend.html
         'backend',
+        'API',
       ],
     },
     sidebarDepth: 2,// 侧边栏深度（最大的深度为 2，能提取到 h2 和 h3 标题）
