@@ -2,6 +2,8 @@
 
 文档链接：[https://i-m-feeling-lucky.github.io/](https://i-m-feeling-lucky.github.io/)
 
+![示例图片](./example.png)
+
 ## 仓库结构
 
 `source` 分支是本仓库的默认分支，存放的是源代码。`master` 分支是由源码自动构建出的网站，用于 Github Pages。
