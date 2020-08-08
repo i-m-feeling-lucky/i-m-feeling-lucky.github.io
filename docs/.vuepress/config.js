@@ -40,9 +40,10 @@ module.exports = {
       ],
       '/develop/': [
         '',          // /develop/
+        'guidelines',
         'frontend',  // /develop/frontend.html
         'backend',
-        'API',
+        ['API', 'API'],
       ],
     },
     sidebarDepth: 2,// 侧边栏深度（最大的深度为 2，能提取到 h2 和 h3 标题）

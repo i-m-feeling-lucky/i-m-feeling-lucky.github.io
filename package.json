@@ -5,7 +5,7 @@
     "widdershins": "^4.0.1"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "widdershins --search true --language_tabs javascript:JavaScript --summary false docs/files/api.yaml -o docs/develop/API.md && vuepress dev docs",
     "docs:build": "vuepress build docs",
     "api:markdown-swagger": "markdown-swagger ./docs/files/api.yaml ./docs/develop/API.md",
     "api:widdershins": "widdershins --search true --language_tabs javascript:JavaScript --summary false docs/files/api.yaml -o docs/develop/API.md"
