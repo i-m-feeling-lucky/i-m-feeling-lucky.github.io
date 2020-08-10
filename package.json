@@ -1,15 +1,9 @@
 {
   "devDependencies": {
-    "markdown-swagger": "^1.0.4",
-    "vuepress": "^1.5.2",
-    "widdershins": "^4.0.1"
+    "vuepress": "^1.5.2"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "api:swagger-gen": "swagger-gen ./docs/files/api.json",
-    "api:swagger-codegen": "swagger-codegen generate -i ./docs/files/api.json -l html2 -o ./docs/files",
-    "api:markdown-swagger": "markdown-swagger ./docs/files/api.yaml ./docs/develop/API.md",
-    "api:widdershins": "widdershins --search true --language_tabs javascript:JavaScript --summary false docs/files/api.yaml -o docs/develop/API.md"
+    "docs:build": "vuepress build docs"
   }
 }
