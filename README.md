@@ -60,6 +60,8 @@ git merge FETCH_HEAD
 
 ## 一些重要设置
 
+在 `docs/.vuepress/public/api.yaml` 中，有 API 的定义。最终生成的API文档在[这里](https://i-m-feeling-lucky.github.io/api.html)。
+
 在 `docs/.vuepress/config.js` 中，有导航栏和侧边栏的定义：
 
 ```js
