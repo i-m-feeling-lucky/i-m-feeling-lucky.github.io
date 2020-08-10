@@ -23,6 +23,7 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: '用户手册', link: '/guide/' },
       { text: '开发文档', link: '/develop/' },
+      { text: 'API', link: 'https://i-m-feeling-lucky.github.io/api.html' },
       { text: '在线面试平台', link: 'https://interview.yusanshi.com' },
     ],
     repo: 'i-m-feeling-lucky',// 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
@@ -43,7 +44,6 @@ module.exports = {
         'guidelines',
         'frontend',  // /develop/frontend.html
         'backend',
-        ['API', 'API'],
       ],
     },
     sidebarDepth: 2,// 侧边栏深度（最大的深度为 2，能提取到 h2 和 h3 标题）
