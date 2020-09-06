@@ -33,6 +33,7 @@ module.exports = {
     sidebar: {
       '/guide/': [
         '',          //  /guide/
+        'uni',
         'admin',     //  /guide/admin.html
         'HR',
         'interviewer',
