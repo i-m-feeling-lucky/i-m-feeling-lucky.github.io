@@ -7,5 +7,3 @@
 - [管理员](./admin.md)
 - [HR](./HR.md)
 - [面试官](./interviewer.md)
-- [候选人](./interviewee.md)
-- [面试流程](./interview.md)

@@ -37,8 +37,6 @@ module.exports = {
         'admin',     //  /guide/admin.html
         'HR',
         'interviewer',
-        'interviewee',
-        'interview',
       ],
       '/develop/': [
         '',          // /develop/
